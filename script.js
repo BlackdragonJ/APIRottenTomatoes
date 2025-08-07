@@ -8,7 +8,8 @@ async function llamarAPI(){ //lo hago con async porque RapidAPI me lo da con un 
         const options = {
 	    method: 'GET',
 	    headers: {
-
+			// se agrega la llave proporcionada por RapidAPI
+			// se agrega el host
 	    }
     };
     try {
@@ -45,3 +46,4 @@ async function llamarAPI(){ //lo hago con async porque RapidAPI me lo da con un 
 
 
 llamarAPI();
+
