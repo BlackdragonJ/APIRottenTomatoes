@@ -8,8 +8,7 @@ async function llamarAPI(){ //lo hago con async porque RapidAPI me lo da con un 
         const options = {
 	    method: 'GET',
 	    headers: {
-		    'x-rapidapi-key': '0911b744c3mshff1da33f04aaad3p166efdjsnd24f83030f7a',
-		    'x-rapidapi-host': 'rottentomato.p.rapidapi.com'
+
 	    }
     };
     try {
@@ -43,5 +42,6 @@ async function llamarAPI(){ //lo hago con async porque RapidAPI me lo da con un 
         console.error("Error al cargar...",error);
     }
 }
+
 
 llamarAPI();
