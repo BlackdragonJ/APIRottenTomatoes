@@ -10,15 +10,19 @@
     <header><br>
         <div class="container">
             <div class="jumbotron">
-                <h1>Rankcontenedor-peliculas Tomatoes de Peliculas</h1><br>
+                <h1>Top Peliculas by Rotten Tomatoes</h1><br>
             </div>
         </div>
     </header>
 
 <body>
     <main class="container my-4">
-        <div class="row" id="contenedor-peliculas">
-            <!-- Aqui aparece el contenido del API -->
+        <div class="container mt-4">
+            <div class="input-group mb-3">
+                <input type="text" id="busqueda" class="form-control" placeholder="Ejemplo: Batman...">
+                <button class="btn btn-primary" onclick="llamarAPI()">Buscar</button>
+            </div>
+            <div class="row" id="contenedor-peliculas"></div>
         </div>
     </main>
 </body>
